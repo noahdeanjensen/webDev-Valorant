@@ -1,5 +1,29 @@
-  /* Custom style for footer */
-  footer {
+/* Style rules for main element */
+main {
+    padding: 1em;
+}
+
+/* Style for container (grid layout) */
+.grid {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+}
+
+/* Style for trailer video */
+#valorant-trailer {
+    grid-column: 2;
+    grid-row: 1/3;
+    padding: 1em;
+    padding-right: 0;
+}
+
+#valorant-trailer figcaption {
+    font-size: .75em;
+}
+
+/* Custom style for footer */
+footer {
     background-color: #343a40;
     color: #fff;
     padding: 20px 0;

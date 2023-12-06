@@ -6,7 +6,7 @@
     <title>Valanalysis</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/CSS/index.css">
+    <link rel="stylesheet" href="CSS/index.css">
 </head>
 
 <body>
@@ -41,13 +41,28 @@
         </div>
     </nav>
 
-    <main>
-        <p>
+    <!-- main class is grid to add grid layout-->
+    <main class="grid">
+        <p id="intro">
             Introduction:
         </p>
-        <p>
-            What is valorant:
-        </p>
+        <div>
+            <h3>What is Valorant?</h3>
+            <p>Valorant is a tactical shooter that was created by Riot Games in 2020. This game is set up as a 5v5
+                scenerio
+                with both attackers and defenders. There are many different agents that you can choose from, and each
+                agent
+                has unique abilities that sets them apart from the others. Choose your agents that work well together
+                and
+                achieve victory.</p>
+        </div>
+        <figure id="valorant-trailer">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/IhhjcB2ZjIM?si=3vs4xi_4HA1BTOmN"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <figcaption>Official launch gameplay trailer from Valorant's official YouTube</figcaption>
+        </figure>
     </main>
 
     <footer class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -63,7 +78,6 @@
             </li>
         </ul>
     </footer>
-
 
     <!-- Bootstrap JS (Optional, for Bootstrap's JS features) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
