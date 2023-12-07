@@ -3,10 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Valanalysis</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/CSS/index.css">
+    <link rel="stylesheet" href="CSS/index.css">
 </head>
 
 <body>
@@ -43,6 +44,118 @@
 
     <main>
         <!-- Your main content goes here -->
+        <div class="grid">
+            <h1>Tips & Tricks</h1>
+            <p id="page-intro">Playing Valorant for the first time can be frustrating when you feel like you don't know
+                what
+                you are doing!
+                Here are some tips & tricks that you should know in order to play better.</p>
+            <div class="tip">
+
+                <h3>Master a few agents</h3>
+                <p>As of today, there are 23 agents in Valorant for you to choose from. If you are always changing who
+                    you
+                    are playing as, then you will never feel comfortable playing these characters. It is especially
+                    important in the beginning to find one or two characters that you like and really learn how their
+                    abilities work. This will make you more confident with their moves which will allow you to focus on
+                    strategy.</p>
+            </div>
+            <div class="tip">
+                <h3>Crosshair placement is everything</h3>
+                <p>An aspect in the game that is important to master early on is crosshair placement. All of the
+                    characters
+                    are
+                    the same height meaning that if you keep your crosshair at head level at all times, then you won't
+                    have
+                    to
+                    aim and can simply shoot when you see them. Mastering crosshair placement will allow you to turn
+                    corners
+                    and
+                    already be aiming for their heads in order to get easy kills.</p>
+            </div>
+            <div class="tip">
+                <h3>Communication is key</h3>
+                <p>Commnicating with your teammates is very important in Valorant. Valorant is a team game and
+                    communicating
+                    with your teammates will allow you to strategize and be aware of what you can do to better work as a
+                    team.
+                    It's always a good idea to explain what you plan to do during the round so that others can play with
+                    you.
+                </p>
+            </div>
+            <div class="tip">
+                <h3>Find the right sensitivity for you</h3>
+                <p>A lot of players don't have the right mouse sensitivity when they start playing Valorant. Having a
+                    sens
+                    that
+                    is too high will not allow you to make the micro-adjustments that are required when the enemy peaks
+                    corners.
+                    Having a sens that is too low will leave you reacting slower and you will have to move your mouse
+                    way
+                    too
+                    much. I would recommend going into the firing range to practice shooting bots in order to find a
+                    sens
+                    that
+                    works for you.</p>
+            </div>
+            <div class="tip">
+                <h3>Your team composition does matter</h3>
+                <p>Valorant has 4 different roles that agents fall under: duelist, sentinel, initiator, controller. It
+                    is
+                    important to make sure that your team comp includes all of these roles in some way. The basic team
+                    composition that is good is 1 controller to smoke off the map, 1 sentinel to watch the flank, 1
+                    initiator to
+                    scout the bomb-site, and two duelists to take space and get kills. Team compositions can vary, but
+                    you
+                    will
+                    definately want at least 1 controller and initiator.</p>
+            </div>
+            <div class="tip">
+                <h3>Be smart with you economy</h3>
+                <p>It is important to pay attention to your economy in the game. If your teammates are saving, then you
+                    should
+                    save with them. If they are buying, then you should try to buy with them. Something else to consider
+                    is
+                    if
+                    you lose pistol round, then you should save the next round unless you are positive that you will win
+                    if
+                    your
+                    force buy. Having a good economy can easly be
+                    the difference between winning or losing a game.</p>
+            </div>
+        </div>
+
+        <fieldset id="tips-and-tricks-field">
+            <form id="request-email">
+                <legend>Request Emails From Valanalysis</legend>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" placeholder="John"><br><br>
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" placeholder="Deer"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" required id="email" placeholder="youremail@gmail.com"><br>
+                <p id="tips-form-heading">Select the updates that you would like to receive</p>
+                <div class="form-checkboxs">
+                    <input type="checkbox" id="news"><label for="news">News Updates</label>
+                </div>
+                <div class="form-checkboxs">
+                    <input type="checkbox" id="tips"><label for="tips">Tips & Tricks</label>
+                </div>
+                <div class="form-checkboxs">
+                    <input type="checkbox" id="tournament"><label for="tournament">Tournament
+                        Info</label>
+                </div>
+                <div class="form-checkboxs">
+                    <input type="checkbox" id="coaching"><label for="coaching">Coaching
+                        Info</label><br>
+                </div>
+                <input type="submit" class="button" onclick="emailThanks()">
+            </form>
+            <form id="submitted" style="display: none">
+                <p>Thank You! Your request has been submitted!</p>
+            </form>
+        </fieldset>
+
     </main>
 
     <footer class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -62,6 +175,7 @@
 
     <!-- Bootstrap JS (Optional, for Bootstrap's JS features) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Scripts/home.js"></script>
 </body>
 
 </html>
