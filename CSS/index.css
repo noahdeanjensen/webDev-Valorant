@@ -8,9 +8,30 @@ figure {
     padding: 0;
 }
 
+body {
+    background-color: gray;
+}
+
+h3 {
+    text-align: left;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+}
+
 /* Style rules for main element */
 main {
     padding: 1em;
+}
+
+/* Style rules for hero image */
+.hero {
+    max-width: 100%;
+}
+
+img {
+    width: 100%;
+    height: 450px;
 }
 
 /* Style for trailer video */
@@ -146,6 +167,44 @@ legend {
 .navbar-nav .nav-link {
     color: #fff;
     /* White links */
+}
+
+/* Style rules for Agent Tier List Table */
+
+table, th, td {
+    border: 3px solid black;
+}
+
+th {
+    background-color: black;
+    color: white;
+}
+
+td {
+    background-color: darkslategray;
+    color: white;
+}
+
+
+/* Style rules for Agent Tier List */
+
+h1 {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: left;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+}
+
+h4 {
+    text-align: left;
+    color: white;
+    font-style: italic;
 }
 
 /* Media query for Desktop View */
