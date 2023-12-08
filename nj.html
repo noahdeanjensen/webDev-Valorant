@@ -46,6 +46,7 @@
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#education">Education</a></li>
+                <li><a href="#game">Game</a></li>
 
             </ul>
         </nav>
@@ -139,6 +140,8 @@
                         <li>Chromebook hardware repair</li>
                         <li>Device Enrollments</li>
                     </ul>
+                    
+                </section>
 
                 </section>
               
@@ -148,6 +151,27 @@
             <h2>Education</h2>
             <p>Southern Utah University / Computer Science Degree August 2018 - Present, Cedar City, UT</p>
             <p>Mountain View High School / Diploma August 2015 - May 2018, Orem, UT</p>
+
+        </section>
+
+        <section id="game">
+            <h2>Now lets play a game of Tic-Tac-Toe before you leave!</h2>
+            <div class="board">
+                <div class="cell" onclick="playerMove(0)"></div>
+                <div class="cell" onclick="playerMove(1)"></div>
+                <div class="cell" onclick="playerMove(2)"></div>
+                <div class="cell" onclick="playerMove(3)"></div>
+                <div class="cell" onclick="playerMove(4)"></div>
+                <div class="cell" onclick="playerMove(5)"></div>
+                <div class="cell" onclick="playerMove(6)"></div>
+                <div class="cell" onclick="playerMove(7)"></div>
+                <div class="cell" onclick="playerMove(8)"></div>
+            </div>
+            <p id="message"></p>
+            <button onclick="restartGame()">Restart Game</button>
+            <script src="Scripts/game.js"></script>
+            
+            
 
         </section>
 
