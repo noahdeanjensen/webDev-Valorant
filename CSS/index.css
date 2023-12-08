@@ -111,3 +111,15 @@ legend {
         display: inline;
     }
 }
+.navbar {
+    margin-bottom: 20px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.navbar-nav .nav-link {
+    color: #fff; /* White links */
+}
