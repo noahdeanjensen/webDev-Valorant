@@ -42,14 +42,19 @@
         </div>
     </nav>
 
+    <figure class="main-pic">
+        <img src="Images/competitive-ranks.jpg" alt="ranks in valorant">
+    </figure>
+
     <main>
         <!-- Your main content goes here -->
+
         <div class="grid">
-            <h1>Tips & Tricks</h1>
+            <h1 id="top-text">Tips & Tricks</h1>
             <p id="page-intro">Playing Valorant for the first time can be frustrating when you feel like you don't know
                 what
                 you are doing!
-                Here are some tips & tricks that you should know in order to play better.</p>
+                Here are some tips & tricks that you should know in order to play better climb the ranked ladder.</p>
             <div class="tip">
 
                 <h3>Master a few agents</h3>
@@ -134,7 +139,10 @@
                 <input type="text" id="lname" placeholder="Deer"><br><br>
                 <label for="email">Email:</label>
                 <input type="email" required id="email" placeholder="youremail@gmail.com"><br>
-                <p id="tips-form-heading">Select the updates that you would like to receive</p>
+                <p class="tips-form-heading">Do you currently play valorant?</p>
+                <input type="radio" id="play-yes" name="play"><label for="play-yes">Yes</label>
+                <input type="radio" id="play-no" name="play"><label for="play-no">No</label>
+                <p class="tips-form-heading">Select the updates that you would like to receive</p>
                 <div class="form-checkboxs">
                     <input type="checkbox" id="news"><label for="news">News Updates</label>
                 </div>
