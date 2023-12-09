@@ -72,7 +72,56 @@ footer ul li a {
     text-decoration: none;
 }
 
-/* Style rules for tips and tricks page */
+/* Style rules for tips and tricks page as well as Joey's resume page*/
+
+.joey-page {
+    background-color: #fff;
+    color: #000;
+}
+
+.joey-page h1,
+.joey-page h2,
+.joey-page h3,
+.joey-page h4 {
+    color: #000;
+    text-align: left;
+    font-style: italic;
+}
+
+.joey-page .navbar {
+    margin-bottom: 0;
+}
+
+.joey-page img {
+    width: 350px;
+    grid-column: 2/4;
+    margin: 0 auto;
+}
+
+.joey-page h5 {
+    font-weight: bold;
+}
+
+#joey-introduction {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#joey-skils {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+#joey-experience {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.joey-resume-section {
+    box-shadow: 5px 5px 15px;
+    padding: .5em;
+    margin: .5em;
+}
 
 .main-pic {
     grid-column: 1/3;
@@ -121,40 +170,6 @@ legend {
     display: block;
 }
 
-/* Media query for Tablet View */
-@media screen and (min-width: 481px) {
-
-    /* Style rules for index.html */
-    /* Style for container (grid layout) */
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 2;
-        grid-gap: 20px;
-    }
-
-    /* Style for trailer video */
-    #valorant-trailer {
-        grid-column: 2;
-        grid-row: 1/3;
-        padding: 1em;
-        padding-right: 0;
-    }
-
-    /* Style rules for tips & tricks */
-    #page-intro {
-        grid-column: 1/3;
-    }
-
-    #tips-and-tricks-field {
-        text-align: center;
-    }
-
-    .form-checkboxs {
-        display: inline;
-    }
-}
-
 .navbar {
     margin-bottom: 20px;
 }
@@ -171,7 +186,9 @@ legend {
 
 /* Style rules for Agent Tier List Table */
 
-table, th, td {
+table,
+th,
+td {
     border: 3px solid black;
 }
 
@@ -207,8 +224,62 @@ h4 {
     font-style: italic;
 }
 
+/* Media query for Tablet View */
+@media screen and (min-width: 481px) {
+
+    /* Style rules for index.html */
+    /* Style for container (grid layout) */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 2;
+        grid-gap: 20px;
+    }
+
+    /* Style for trailer video */
+    #valorant-trailer {
+        grid-column: 2;
+        grid-row: 1/3;
+        padding: 1em;
+        padding-right: 0;
+    }
+
+    /* Style rules for tips & tricks */
+    #page-intro {
+        grid-column: 1/3;
+    }
+
+    #tips-and-tricks-field {
+        text-align: center;
+    }
+
+    .form-checkboxs {
+        display: inline;
+    }
+}
+
 /* Media query for Desktop View */
 @media screen and (min-width: 769px) {
+
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #intro {
+        grid-column: 1;
+    }
+
+    #what-is-valorant {
+        grid-column: 2;
+    }
+
+    #valorant-trailer {
+        grid-column: 3;
+    }
+
+    #page-intro {
+        grid-column: 1/4;
+    }
 
     /* Style rules for Tips and Tricks */
     .tip:hover {
@@ -216,9 +287,9 @@ h4 {
         color: #fff;
         animation-name: shake;
         animation-duration: 1s;
-        animation-iteration-count: infinite;
     }
 
+    /* Style rules for shake animation */
     @keyframes shake {
         0% {
             transform: rotate(0deg);
@@ -228,12 +299,5 @@ h4 {
             transform: rotate(-3deg);
         }
 
-        50% {
-            transform: rotate(0deg);
-        }
-
-        100% {
-            transform: rotate(3deg);
-        }
     }
 }
