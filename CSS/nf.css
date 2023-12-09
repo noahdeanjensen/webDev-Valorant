@@ -1,7 +1,6 @@
 /* CSS reset rule */
 body,
 nav,
-main,
 footer,
 figure {
     margin: 0;
@@ -26,7 +25,7 @@ h2 {
 
 /* Style rules for section About Me element */
 section {
-    width: 50%;
+    width: 100%;
     display: block;
     padding: 40px;
     margin: 20px 0;
