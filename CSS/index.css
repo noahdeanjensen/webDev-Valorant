@@ -197,11 +197,13 @@ th {
     color: white;
 }
 
-td {
-    background-color: darkslategray;
-    color: white;
+tr:nth-child(odd) {
+    background-color: darkgray;
 }
 
+tr:nth-child(even) {
+    background-color: darkslategray;
+}
 
 /* Style rules for Agent Tier List */
 
